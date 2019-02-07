@@ -11,7 +11,10 @@ def is_Palindrome2(s):
     if(s1==s2):return True
     else: return False
 
-s="anna"
-print(is_Palindrome2(s))
+def is_Palindrome3(s):
+    w=s[::-1]
+    x="".join(w)
+    return(s==x)
 
-    
+s=input("please enter a word? ")
+print(is_Palindrome3(s))
