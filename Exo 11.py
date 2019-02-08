@@ -7,5 +7,11 @@ def is_Prime(number):
         return True
     else: return False
 
-number=3
-print(is_Prime(73))
+def is_Prime2(number):
+    for x in range(2,number):
+        if(number%x==0):
+            return False
+    return True
+
+number=int(input("Enter your number? "))
+print(is_Prime2(number))
