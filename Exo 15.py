@@ -1,5 +1,8 @@
-s="My name is Michele"
-list_words=s.split()  #split() returns a list
-list_words_reversed=list_words[::-1]  #this will give us a reversed list
-s2=" ".join(list_words_reversed)
-print(s2)
+def backwards(word):
+    s=word.split()
+    s.reverse()
+    x=" ".join(s)
+    return x
+
+word="My name is Michele"
+print(backwards(word))
