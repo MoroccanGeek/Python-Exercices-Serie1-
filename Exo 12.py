@@ -1,9 +1,16 @@
-a = [5, 10, 15, 20, 25]
-#first method
-#l1=[]
-#l1.append(a[0])
-#l1.append(a[-1])
-#second method
-l2=[a[x] for x in range(len(a)) if(x==0 or x==len(a)-1)]
-
-print(l2)
+def List_Ends(l):
+    w=[]
+    w.append(l[0])
+    w.append(l[-1])
+    return w
+    
+def List_Ends2(l):
+    w=[l[x] for x in range(len(a)) if(x==0 or x==len(a)-1)]
+    return w
+def main():
+  a = [5, 10, 15, 20, 25]
+  print(List_Ends(a))
+  
+if __name__ == "__main__":
+  main()
+  
