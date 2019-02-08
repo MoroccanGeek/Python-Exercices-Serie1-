@@ -5,6 +5,10 @@ Birthdates={"Albert Einstein":"3/14/1879",
 print("Welcome to the birthday dictionary. We know the birthdays of: ")
 for item in Birthdates:
     print(item)
-q=input("Who's birthday do you want to look up?")
-print(q,"'s birthday is ",Birthdates.get(q))
 
+person=input("Who's birthday do you want to look up?")
+
+if(person in Birthdates):
+    print("%s's birthday is %s"%(person,Birthdates.get(person)))
+else:
+    print("The person can't be found")
