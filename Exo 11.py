@@ -1,5 +1,5 @@
 def list_of_divisors(number):
-    l=[x for x in range(2,number-1) if number%x==0]
+    l=[x for x in range(2,number) if number%x==0]
     return l
 
 def is_Prime(number):
